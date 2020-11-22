@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def generate_download_signed_url_v4(bucket_name="image-bucket-dhauptman", blob_name="test.jpg"):
+def generate_download_signed_url_v4(bucket_name="my-bucket", blob_name="test.jpg"):
     """Generates a v4 signed URL for downloading a blob.
 
     Note that this method requires a service account key file. You can not use
